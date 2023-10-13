@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StokTakip.WebApp.Repository;
 
@@ -10,9 +11,11 @@ using StokTakip.WebApp.Repository;
 namespace StokTakip.WebApp.Migrations
 {
     [DbContext(typeof(RepositoryBaglantisi))]
-    partial class RepositoryBaglantisiModelSnapshot : ModelSnapshot
+    [Migration("20231013103238_category")]
+    partial class category
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

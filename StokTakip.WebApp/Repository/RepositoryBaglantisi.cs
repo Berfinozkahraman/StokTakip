@@ -14,5 +14,5 @@ public class RepositoryBaglantisi : DbContext
         optionsBuilder.UseSqlServer("server =(localdb)\\MSSQLLocalDB; Database = Stok_db; Trusted_Connection=true ");
     }
     public DbSet<Product> Products { get; set; }
-
+    public DbSet<Category> Categories { get; set; }
 }
