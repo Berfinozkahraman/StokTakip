@@ -1,7 +1,10 @@
+using StokTakip.WebApp.Repository;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<RepositoryBaglantisi>();
 
 var app = builder.Build();
 
